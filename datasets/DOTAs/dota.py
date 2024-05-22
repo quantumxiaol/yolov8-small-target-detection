@@ -19,6 +19,9 @@
 
 import os
 import cv2
+import os
+import cv2
+import numpy as np
 
 def map_class_to_index(class_name):
     class_mapping = {
@@ -59,18 +62,31 @@ def convert_label_to_yolo(label_file, image_width, image_height):
         category = parts[8]
         difficult = int(parts[9])
 
-        # 计算中心坐标和宽高
-        x_center = (coords[0] + coords[4]) / 2.0 / image_width
-        y_center = (coords[1] + coords[5]) / 2.0 / image_height
-        box_width = abs(coords[2] - coords[0]) / image_width
-        box_height = abs(coords[5] - coords[1]) / image_height
-
         # 编码类别
         class_index = map_class_to_index(category)
 
         # 如果类别未知或难以检测，跳过
-        if class_index == -1 or difficult == 1:
+        # if class_index == -1 or difficult == 1:
+        if class_index == -1:
+
             continue
+
+        # 创建点的数组
+        pts = np.array(coords).reshape(4, 2).astype(np.float32)
+
+        # 计算最小外接矩形
+        rect = cv2.minAreaRect(pts)
+        box = cv2.boxPoints(rect)
+        box = np.intp(box)
+
+        x_min, y_min = np.min(box, axis=0)
+        x_max, y_max = np.max(box, axis=0)
+
+        # 计算中心坐标和宽高
+        x_center = (x_min + x_max) / 2.0 / image_width
+        y_center = (y_min + y_max) / 2.0 / image_height
+        box_width = (x_max - x_min) / image_width
+        box_height = (y_max - y_min) / image_height
 
         # 生成YOLOv8格式标签
         yolo_label = f"{class_index} {x_center} {y_center} {box_width} {box_height}"
