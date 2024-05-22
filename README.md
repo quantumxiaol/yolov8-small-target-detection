@@ -35,8 +35,34 @@ Gradio-YOLOv8-Det  https://gitee.com/CV_Lab/gradio-yolov8-det
     
     |-pred.py  评估模型
 
+    github.com/ultralytics/ultralytics
 
+    |-docker
 
+    |-docs
+
+    |-docker
+
+    |-examples
+
+    |-ultralytics
+
+可视化示意
+![gradio_yolov8_det](https://github.com/quantumxiaol/yolov8-small-target-detection/blob/main/png/gradio_yolov8_det_examples.png "gradio_yolov8_det")
+
+在NWPU VHR-10数据集表现
+
+![NWPU val_pred](https://github.com/quantumxiaol/yolov8-small-target-detection/blob/main/png/img_nwpu_val_pred.jpg "NWPU val_pred")
+原标签
+![NWPU val_labels](https://github.com/quantumxiaol/yolov8-small-target-detection/blob/main/png/img_nwpu_val_labels.jpg "NWPU val_labels")
+
+在DOTA数据集表现
+
+![DOTA val_pred](https://github.com/quantumxiaol/yolov8-small-target-detection/blob/main/png/img_dota_val_batch0_pred.jpg "DOTA val_pred")
+原标签
+![DOTA val_labels](https://github.com/quantumxiaol/yolov8-small-target-detection/blob/main/png/img_dota_val_batch0_labels.jpg "DOTA val_labels")
+
+目前来看在DOTA上表现不好，这可能是由于在DOTA上进行标签转换时没有处理好旋转框，导致模型不能很好的学到较小的目标。
 
 
 Gradio-YOLOv8-Det的原作者  曾逸夫, (2024) Gradio YOLOv8 Det (Version 2.1.0).https://gitee.com/CV_Lab/gradio-yolov8-det.git.
