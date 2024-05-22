@@ -1,0 +1,9 @@
+model_cls_name: ['persona', 'bicicleta', 'coche', 'motocicleta', 'avión', 'autobús', 'tren', 'camión', 'barco', 'semáforo',
+     'boca de incendios', 'señal de alto', 'parquímetro', 'banco', 'pájaro', 'gato', 'perro', 'caballo', 'oveja', 'vaca', 'elefante',
+     'oso', 'cebra', 'jirafa', 'mochila', 'paraguas', 'bolso', 'corbata', 'maleta', 'frisbee', 'esquís', 'snowboard',
+     'pelota deportiva', 'cometa', 'bate de béisbol', 'guante de béisbol', 'monopatín', 'tabla de surf', 'raqueta de tenis', 'botella',
+     'copa de vino', 'taza', 'tenedor', 'cuchillo', 'cuchara', 'tazón', 'plátano', 'manzana', 'sándwich', 'naranja', 'brócoli',
+     'zanahoria', 'perrito caliente', 'pizza', 'rosquilla', 'pastel', 'silla', 'sofá', 'planta en maceta', 'cama', 'mesa de comedor', 'inodoro',
+     'tv', 'laptop', 'ratón', 'control remoto', 'teclado', 'celular', 'microondas', 'horno', 'tostadora', 'fregadero', 'nevera',
+     'libro', 'reloj', 'jarrón', 'tijeras', 'oso de peluche', 'secador de pelo', 'cepillo de dientes'
+]
