@@ -1,0 +1,18 @@
+path: E:\py\yolov8\datasets\NWPUVHR # dataset root dir
+train: images/train # train images 
+val: images/val # val images 
+test: images/test
+
+# Classes
+
+names:
+  0: airplane
+  1: ship
+  2: storage tank
+  3: baseball diamond
+  4: tennis court
+  5: basketball court
+  6: ground track field
+  7: harbor
+  8: bridge
+  9: vehicle
