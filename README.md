@@ -49,6 +49,10 @@ Gradio-YOLOv8-Det  https://gitee.com/CV_Lab/gradio-yolov8-det
 
 可视化示意
 ![gradio_yolov8_det](https://github.com/quantumxiaol/yolov8-small-target-detection/blob/main/png/gradio_yolov8_det_examples.png "gradio_yolov8_det")
+原图
+![gradio_yolov8_det](https://github.com/quantumxiaol/yolov8-small-target-detection/blob/main/png/img_nwpu_test_raw.jpg "gradio_yolov8_det")
+检测结果
+![gradio_yolov8_det](https://github.com/quantumxiaol/yolov8-small-target-detection/blob/main/png/img_nwpu_test_det.jpg "gradio_yolov8_det")
 
 在NWPU VHR-10数据集表现
 
