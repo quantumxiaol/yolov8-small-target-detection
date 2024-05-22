@@ -67,6 +67,9 @@ Gradio-YOLOv8-Det  https://gitee.com/CV_Lab/gradio-yolov8-det
 ![DOTA val_labels](https://github.com/quantumxiaol/yolov8-small-target-detection/blob/main/png/img_dota_val_batch0_labels.jpg "DOTA val_labels")
 
 目前来看在DOTA上表现不好，这可能是由于在DOTA上进行标签转换时没有处理好旋转框，导致模型不能很好的学到较小的目标。
-
+下面是修改了标签计算方法的训练结果。
+![DOTA val_pred](https://github.com/quantumxiaol/yolov8-small-target-detection/blob/main/png/img_dota_val_batch1_pred_v2.jpg "DOTA val_pred")
+原标签
+![DOTA val_labels](https://github.com/quantumxiaol/yolov8-small-target-detection/blob/main/png/img_dota_val_batch1_labels_v2.jpg "DOTA val_labels")
 
 Gradio-YOLOv8-Det的原作者  曾逸夫, (2024) Gradio YOLOv8 Det (Version 2.1.0).https://gitee.com/CV_Lab/gradio-yolov8-det.git.
