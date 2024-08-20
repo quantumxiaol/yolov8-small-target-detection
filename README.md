@@ -15,37 +15,38 @@ Gradio-YOLOv8-Det  https://gitee.com/CV_Lab/gradio-yolov8-det
 修改/cls_name/cls_name_zh.yaml以修改目标检测的标签值
 
 文件结构
-|- yolov8 解压yolov8源代码
 
-    |-datasets 储存数据集
-
-           |--DOTAs
-
-           |--NWPUVHR
-
-    |-gradio_yolov8_det 结果可视化
-
-    |-yolov8fornwpuvhr.pt  在NWPU VHR-10上训练的一个权值
-
-    |-yolov8.yaml  配置网络，修改nc
-
-    |-train.py  在NWPU VHR-10训练模型
+    |- yolov8 解压yolov8源代码
     
-    |-train_DOTAs.py  在DOTA训练模型
+        |-datasets 储存数据集
     
-    |-pred.py  评估模型
-
-    github.com/ultralytics/ultralytics
-
-    |-docker
-
-    |-docs
-
-    |-docker
-
-    |-examples
-
-    |-ultralytics
+               |--DOTAs
+    
+               |--NWPUVHR
+    
+        |-gradio_yolov8_det 结果可视化
+    
+        |-yolov8fornwpuvhr.pt  在NWPU VHR-10上训练的一个权值
+    
+        |-yolov8.yaml  配置网络，修改nc
+    
+        |-train.py  在NWPU VHR-10训练模型
+        
+        |-train_DOTAs.py  在DOTA训练模型
+        
+        |-pred.py  评估模型
+    
+        github.com/ultralytics/ultralytics
+    
+        |-docker
+    
+        |-docs
+    
+        |-docker
+    
+        |-examples
+    
+        |-ultralytics
 
 可视化示意
 ![gradio_yolov8_det](https://github.com/quantumxiaol/yolov8-small-target-detection/blob/main/png/gradio_yolov8_det_examples.png "gradio_yolov8_det")
