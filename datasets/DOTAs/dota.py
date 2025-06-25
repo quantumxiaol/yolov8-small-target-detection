@@ -1,24 +1,14 @@
-# 将标签 ./ground trurth  (563,478),(630,573),1 转为 1 x x x x 位于./labels
+# 将标签 ./ground trurth  2244.0 1791.0 2254.0 1795.0 2245.0 1813.0 2238.0 1809.0 small-vehicle 1 转为 1 x x x x 位于./labels
 # datasets
-
 #         |-images
-
 #                 |--train
-
 #                 |--val
-
 #                 |--test
-
 #         |-labels
-
 #                 |--train
-
 #                 |--val
-
 #                 |--test
 
-import os
-import cv2
 import os
 import cv2
 import numpy as np
